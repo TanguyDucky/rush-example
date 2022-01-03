@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-app",
+      "comment": "New name, rush-test-my-app",
+      "type": "major"
+    }
+  ],
+  "packageName": "rush-test-my-app",
+  "email": "tanguy@ducky.eco"
+}
