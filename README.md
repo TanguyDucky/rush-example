@@ -1,3 +1,5 @@
+> This fork focuses on publishing packages to NPM using Github Actions and RushJS
+
 # Example Rush Monorepo
 
 This template is part of the documentation of the [Rush](https://rushjs.io/) tool.
