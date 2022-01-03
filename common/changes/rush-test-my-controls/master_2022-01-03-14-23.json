@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-controls",
+      "comment": "A minor update: dear world",
+      "type": "minor"
+    }
+  ],
+  "packageName": "rush-test-my-controls",
+  "email": "tanguy@ducky.eco"
+}
