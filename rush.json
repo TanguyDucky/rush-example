@@ -290,19 +290,19 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    // "url": "https://github.com/microsoft/rush-example",
+    "url": "https://github.com/TanguyDucky/rush-example",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
-    // "defaultBranch": "master",
+    "defaultBranch": "master",
 
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
      */
-    // "defaultRemote": "origin"
+    "defaultRemote": "origin"
   },
 
   /**
@@ -393,7 +393,7 @@
       /**
        * The NPM package name of the project (must match package.json)
        */
-      "packageName": "my-app",
+      "packageName": "rush-test-my-app",
 
       /**
        * The path to the project folder, relative to the rush.json config file.
@@ -427,7 +427,7 @@
        * the Rush change and publish workflows. The default value is false.
        * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
        */
-      // "shouldPublish": false,
+      "shouldPublish": true,
 
       /**
        * Facilitates postprocessing of a project's files prior to publishing.
@@ -447,15 +447,17 @@
     },
 
     {
-      "packageName": "my-controls",
+      "packageName": "rush-test-my-controls",
       "projectFolder": "libraries/my-controls",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "shouldPublish": true
     },
 
     {
-      "packageName": "my-toolchain",
+      "packageName": "rush-test-my-toolchain",
       "projectFolder": "tools/my-toolchain",
-      "reviewCategory": "tools"
+      "reviewCategory": "tools",
+      "shouldPublish": true
     }
   ]
 }
