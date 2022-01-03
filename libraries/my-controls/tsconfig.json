@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/my-toolchain/includes/tsconfig-web.json",
+  "extends": "./node_modules/rush-test-my-toolchain/includes/tsconfig-web.json",
 
   "compilerOptions": {
     "types": [

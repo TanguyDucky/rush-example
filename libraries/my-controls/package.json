@@ -11,7 +11,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "my-toolchain": "^1.0.0",
+    "rush-test-my-toolchain": "^1.0.0",
     "typescript": "^3.0.3"
   }
 }

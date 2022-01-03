@@ -3,7 +3,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
-      "name": "my-controls",
+      "name": "rush-test-my-controls",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "rush-test-my-toolchain",
       "allowedCategories": [ "production" ]
     },
     {
