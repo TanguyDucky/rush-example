@@ -23,21 +23,29 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: git config email
-        run: git config --local user.email rushbot@users.noreply.github.com
-      - name: git config name
-        run: git config --local user.name Rushbot
-
-      - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify
+#      - name: git config email
+#        run: git config --local user.email rushbot@users.noreply.github.com
+#      - name: git config name
+#        run: git config --local user.name Rushbot
+#
+#      - name: Verify Change Logs
+#        run: node common/scripts/install-run-rush.js change --verify
+#
+#      - name: Rush Install
+#        run: node common/scripts/install-run-rush.js install
+#
+#      - name: Rush Rebuild
+#        run: node common/scripts/install-run-rush.js rebuild
         
-      - name: Rush Install
-        run: node common/scripts/install-run-rush.js install
-        
-      - name: Rush Rebuild
-        run: node common/scripts/install-run-rush.js rebuild
-        
-      - name: Rush Publish
-        run: node common/scripts/install-run-rush.js publish --publish --apply --target-branch master --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }}
+#      - name: Rush Publish
+#        run: node common/scripts/install-run-rush.js publish --publish --apply --target-branch master --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }}
 
+      - name: Test variable
+        run: echo $MY_VAR
+        env:
+          MY_VAR: ${{ secrets.MYVAR }}
 
+      - name: Test variable brackets
+        run: echo ${MY_VAR}
+        env:
+          MY_VAR: ${{ secrets.MYVAR }}
