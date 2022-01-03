@@ -23,6 +23,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: git config email
+        run: git config --local user.email rushbot@users.noreply.github.com
+      - name: git config name
+        run: git config --local user.name Rushbot
+
       - name: Verify Change Logs
         run: node common/scripts/install-run-rush.js change --verify
         
