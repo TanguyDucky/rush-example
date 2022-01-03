@@ -1,0 +1,22 @@
+{
+  "name": "rush-test-my-controls",
+  "entries": [
+    {
+      "version": "2.0.0",
+      "tag": "rush-test-my-controls_v2.0.0",
+      "date": "Mon, 03 Jan 2022 13:58:07 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "New name, rush-test-my-controls"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"rush-test-my-toolchain\" from `^1.0.0` to `^1.1.0`"
+          }
+        ]
+      }
+    }
+  ]
+}
