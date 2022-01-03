@@ -41,11 +41,11 @@ jobs:
 #        run: node common/scripts/install-run-rush.js publish --publish --apply --target-branch master --npm-auth-token ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Test variable
-        run: echo $MY_VAR
+        run: echo $MY_VAR | sed 's/./& /g'
         env:
           MY_VAR: ${{ secrets.MYVAR }}
 
       - name: Test variable brackets
-        run: echo ${MY_VAR}
+        run: echo ${MY_VAR} | sed 's/./& /g'
         env:
           MY_VAR: ${{ secrets.MYVAR }}
