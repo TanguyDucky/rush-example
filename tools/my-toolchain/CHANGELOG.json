@@ -1,0 +1,17 @@
+{
+  "name": "rush-test-my-toolchain",
+  "entries": [
+    {
+      "version": "1.1.0",
+      "tag": "rush-test-my-toolchain_v1.1.0",
+      "date": "Mon, 03 Jan 2022 14:06:19 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Small change"
+          }
+        ]
+      }
+    }
+  ]
+}
